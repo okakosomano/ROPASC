@@ -90,4 +90,8 @@ function main() {
     water_div.addEventListener('click', () => game("wa"));
 }  
 
+alert("JANKEN!");
+alert("But Fire Wind Water");
+alert("....because Rock Paper Scissors is too mainstream");
+
 main(); 
