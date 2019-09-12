@@ -1,0 +1,116 @@
+/*import fetches fonts from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css?family=Chilanka&display=swap');
+
+/* '*' here applies to the entire page.Purpose is to start from a base point*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 1s ease-in;
+}
+
+/*background color of the page*/
+body{
+    background-color: #1c325a;
+}
+
+/*Header properties*/
+header {
+    background: rgb(214, 145, 17); 
+    padding: 30px;
+}
+
+/*Applies to the h1 element in the header*/
+header > h1 {
+    color: blue;
+    text-align: center;
+    font-family: 'Chilanka', cursive;
+}
+
+
+/* position relative here sets a reference point for the userlabel id below*/
+.scoreboard{
+    margin: 20px auto;
+    border: 5px solid gainsboro;
+    width: 300px;
+    color: silver;
+    font-size: 50px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: 'Chilanka', cursive;
+    position: relative;
+}
+
+.badge{
+    background: rgb(235, 157, 13);21;
+    color: white;
+    font-size: 25px;
+    padding: 5px 5px;
+    font-family: 'Chilanka', cursive;
+    border-radius: 30%;
+}
+
+#user-label{
+    position: absolute;
+    top: 20px;
+    left: -40px;
+
+}
+
+#ai-label{
+    position: absolute;
+    top: 20px;
+    right: -20px;
+
+}
+
+.result{
+    font-size: 50px;
+    color: black;
+}
+
+.result > p{
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Chilanka', cursive;
+}
+
+.choices{
+    margin: 35px 10px;
+    text-align: center;
+}
+.choice{
+    display: inline-block; 
+    border: 4px solid white;
+    margin: 0 15px;
+    transition: all 1s ease;
+}
+
+.choice:hover{
+    cursor: pointer;
+    background: #870300
+}
+.action-message {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Chilanka', cursive;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.green-glow {
+    border: 4px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow {
+    border: 4px solid #fc121b;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.grey-glow {
+    border: 4px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+}
